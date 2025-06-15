@@ -1,0 +1,23 @@
+<div class="cmp-floorplan-details" data-sly-use.model="com.test1.dev.core.models.FloorPlanDetailsModel">
+    <h3>Floorplan details Component - SlingModel/OSGi Service</h3>
+    <img src="${model.unitDetailsNav.tourImage @ context='html'}" alt="Tour Image" />
+    <p>${model.unitDetailsNav.diagramAltText}</p>
+    
+    <table class="fp-table">
+        <thead>
+            <tr>
+                <th colspan="4">Available Units</th>               
+            </tr>
+        </thead>
+        <tbody>
+            <sly data-sly-list.unit="${model.unitDetails}">
+                <tr>
+                    <td>Unit #${unit.unit}</td>
+                    <td>Starting at ${unit.rate}</td>
+                    <td>${unit.availbleFrom}</td>
+                    <td><a href="${unit.link}">VIEW UNIT</a></td>
+                </tr>
+            </sly>
+        </tbody>
+    </table>
+</div>
