@@ -1,0 +1,36 @@
+// Best practice:
+// For a good separation of concerns, don't rely on the DOM element names,
+// but on dedicated CSS selectors to identify all elements
+.cmp-helloworld {
+	
+}
+.cmp-helloworld__title {
+		  font-size: 1.5rem;
+		  font-weight: bold;
+		  color: orangered;
+
+		  // Adding responsive styling
+		  @media (max-width: 768px) {
+		    font-size: 1rem;
+		  }
+
+		  // Adding hover effect
+		  &:hover {
+		    color: yellowgreen;
+		    text-decoration: underline;
+		  }
+
+		  // Adding a modifier class
+		  &.highlight {
+		    background-color: #f0f8ff;
+		    padding: 0.5rem;
+		    border-radius: 5px;
+		  }
+}
+.cmp-helloworld__item {}
+.cmp-helloworld__item-label {
+    margin-bottom: 0;
+}
+.cmp-helloworld__item-output {
+    margin-top: 0;
+}

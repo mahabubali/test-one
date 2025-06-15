@@ -1,0 +1,35 @@
+.cmp-floorplan-details {
+	padding: 1rem;
+	border-style: solid;
+}
+
+.fp-table {
+    width: 100%; /* Make the table span the container width */
+    border-collapse: collapse; /* Remove space between table cells */
+    margin-top: 20px; /* Add spacing above the table */
+    font-family: Arial, sans-serif; /* Apply a clean font */
+    font-size: 14px; /* Set a readable font size */
+}
+
+td {
+    border: 1px solid #ddd; /* Add light borders to cells */
+    padding: 8px; /* Add padding for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+th {
+	border: 1px solid #ddd; /* Add light borders to cells */
+    padding: 8px; /* Add padding for spacing */
+    text-align: left; /* Align text to the left */
+    background-color: #f4f4f4; /* Light gray background for headers */
+    font-weight: bold; /* Make headers bold */
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row colors for better readability */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}

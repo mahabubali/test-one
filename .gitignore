@@ -1,6 +1,9 @@
 # Java build output
-/bin/
-/target/
+bin/
+target/
+node_modules/
+dist/
+build/
 
 # Eclipse files
 .project
@@ -13,3 +16,13 @@ Thumbs.db
 
 # Logs
 *.log
+*.tmp
+*.temp
+
+
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
